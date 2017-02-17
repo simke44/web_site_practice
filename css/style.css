@@ -1,0 +1,324 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/background.png);
+	font-family: Arial, sans-serif;
+	font-size: 14px;
+	color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0.5em 0 0.4em;
+}
+
+h1 {font-size: 38px;}
+h2 {font-size: 28px;}
+h3 {font-size: 26px;}
+h4 {font-size: 24px;}
+h5 {font-size: 22px;}
+h6 {font-size: 20px;}
+
+a:link,
+a:visited {
+	color: #921113;
+	text-decoration: none;
+}
+a:hover {
+	color: #B18400;
+	text-decoration: underline;
+}
+a:active {
+	color: #555;
+}
+
+
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+}
+#wrapper {
+	width:1200px;
+	margin: 0 auto 50px;
+	background-color: #FFF;
+	box-shadow: 0 0 10px 2px rgba(0,0,0,0.4);
+}
+#header {
+	background-color: #921113;
+	overflow: hidden;
+	border-bottom: 5px solid #777;
+}
+#logo {
+	float: left;
+	border-right: 1px solid rgba(255,255,255,0.3);
+	margin-right:15px;
+}
+#nav {
+	float: left;
+}
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#nav ul li {
+	float: left;
+}
+#nav ul li a {
+	display: block;
+	padding: 10px 15px 0;
+	height: 70px;
+	line-height: 70px;
+}
+#nav ul li a:link,
+#nav ul li a:visited {
+	color: #FFF;
+	text-decoration: none;
+}
+#nav ul li a:hover {
+	background-color: #410000;
+} 
+#nav ul li a:active {
+	background-color: #AF4A4B;
+} 
+
+#front {
+	position: relative;
+}
+.front-over {
+	position: absolute;
+	bottom: 40px;
+	right: 60px;
+}
+
+#main {
+	float: left;
+	width: 840px;
+	padding: 15px;
+}
+#sidebar {
+	float: right;
+	width: 300px;
+	padding: 15px;
+	background-color: #CCC;
+}
+
+.block {
+	overflow: hidden;
+}
+
+.block h2 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+#main .block h2 {
+	border-bottom: 4px solid #921113;
+}
+#sidebar .block h2 {
+	border-bottom: 4px solid #777;
+}
+
+
+#intro img {
+	float: right;
+}
+#intro .introText {
+	padding-right: 300px;
+}
+
+
+.article {
+	float: left;
+	width: 400px;
+	margin-right: 40px;
+}
+.article:nth-of-type(2n) {
+	margin-right: 0;
+}
+
+.article h3 {
+	color: #777;
+	text-transform: uppercase;
+}
+.article img {
+	float: left;
+	margin:2px 14px 2px 0;
+}
+.article p {
+	margin-top: 0;
+}
+
+#tags ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#tags ul li {
+	float: left;
+}
+#tags ul li a {
+	display: block;
+	padding: 10px;
+	margin: 0 7px 7px 0;
+}
+#tags ul li a:link,
+#tags ul li a:visited {
+	background-color: #777;
+	color: #FFF;
+	text-decoration: none;
+}
+#tags ul li a:hover {
+	background-color: #921113;
+}
+#tags ul li a:active {
+	background-color: #f90;
+} 
+
+
+.reklama {
+	margin-top: 30px;
+}
+
+
+#footer {
+	clear: both;
+	text-align: center;
+	padding: 10px;
+	font-size: 11px;
+	border-top: 5px solid #CCC;
+}
+#footer p {
+	margin: 0;
+}
+
+/* manji ekrani racunara */
+@media screen and (min-width:1024px) and (max-width:1260px) {
+	
+	#wrapper {
+		width: 960px;
+	}
+	#main {
+		width:600px;
+	}
+	#sidebar {
+		width:300px;
+	}
+	.article {
+		width: 290px;
+		margin-right: 20px;
+	}
+	
+}
+
+/* tablet racunari */
+@media screen and (min-width:768px) and (max-width:1023px) {
+	
+	#wrapper {
+		width: 700px;
+	}
+	#logo {
+		float: none;
+		text-align: center;	
+		border-right: none;
+		border-bottom: 1px solid rgba(255,255,255,0.3);
+		margin-right: 0;
+	}
+	#nav {
+		float: none;
+		text-align: center;
+	}
+	#nav ul li {
+		float: none;
+		display: inline-block;
+	}
+	.front-over {
+		width:300px;
+		bottom: 20px;
+		right: 10px;
+	}
+	#main {
+		padding: 10px;
+		width: 420px;
+	}
+	#sidebar {
+		padding: 10px;
+		width: 240px;
+	}
+	#intro img {
+		width: 200px;
+	}
+	#intro .introText {
+		padding-right: 0;
+	}
+	.article {
+		float: none;
+		width: auto;
+		margin-right: 0;
+		overflow: hidden;
+	}
+	
+}
+
+/* mobilni telefoni i manji tablet racunari */
+@media screen and (max-width:767px) {
+	
+	#wrapper {
+		width: 80%;
+	}
+	#logo {
+		float: none;
+		text-align: center;	
+		border-right: none;
+		border-bottom: 1px solid rgba(255,255,255,0.3);
+		margin-right: 0;
+	}
+	#nav {
+		float: none;
+		text-align: center;
+		font-size: 20px;
+	}
+	#nav ul li {
+		float: none;
+	}
+	.front-over {
+		display: none;
+	}
+	
+	#main,
+	#sidebar {
+		float: none;
+		width: auto;
+		padding: 10px;
+	}
+	
+	#intro img {
+		float: none;
+	}
+	#intro .introText {
+		padding-right: 0;
+	}
+	
+	.article {
+		float: none;
+		width: auto;
+		margin-right: 0;
+		overflow: hidden;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
